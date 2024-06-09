@@ -1,0 +1,13 @@
+              precision    recall  f1-score   support
+
+     diflush       1.00      1.00      1.00        40
+        med1       1.00      1.00      1.00        33
+        med2       0.98      1.00      0.99        43
+        med3       1.00      0.98      0.99        46
+       n2dry       0.97      1.00      0.99        33
+   noprocess       1.00      0.97      0.98        58
+    preflush       0.94      1.00      0.97        16
+
+    accuracy                           0.99       269
+   macro avg       0.98      0.99      0.99       269
+weighted avg       0.99      0.99      0.99       269

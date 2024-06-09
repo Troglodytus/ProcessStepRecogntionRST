@@ -1,0 +1,33 @@
+
+####################### NEU #####################
+
+python ProcessRecognition_Training_Screenshotter_v01.py C:\Users\Eichleitner\Documents\Coding
+python ProcessRecognition_Training_PreProcess_v01.py C:\Users\Eichleitner\Documents\Coding
+python ProcessRecognition_Training_CNN_v02.py C:\Users\Eichleitner\Documents\Coding
+python ProcessRecognition_Training_CNN_Savestate_v01.py C:\Users\Eichleitner\Documents\Coding
+python ProcessRecognition_Main_v06.py C:\Users\Eichleitner\Documents\Coding
+
+
+
+
+#################### ARCHIVE ####################
+python 01b_screenshotter_key.py C:\Users\Eichleitner\Documents\Coding
+python 01b_screenshotter_keyerror.py C:\Users\Eichleitner\Documents\Coding
+
+
+python 02_resize_images.py C:\Users\Eichleitner\Documents\Coding
+
+python 03a_convert_format.py C:\Users\Eichleitner\Documents\Coding
+python 03a_rename_category.py C:\Users\Eichleitner\Documents\Coding
+python 04a_label_csv_combo.py C:\Users\Eichleitner\Documents\Coding
+
+python 05_train_cnn_v12.py C:\Users\Eichleitner\Documents\Coding - 7 Classes
+python 05_train_cnn_v16.py C:\Users\Eichleitner\Documents\Coding - 7 Classes
+
+python 05_train_cnn7class_v04.py C:\Users\Eichleitner\Documents\Coding - 7 Classes / Augmentation / Metrics
+
+python 05_train_cnn_v17.py C:\Users\Eichleitner\Documents\Coding - 13 Classes
+python 05_train_cnn_v18.py C:\Users\Eichleitner\Documents\Coding - 13 Classes
+
+python 07_live_predict_v04.py C:\Users\Eichleitner\Documents\Coding
+python 07_live_predict_v04a.py C:\Users\Eichleitner\Documents\Coding
