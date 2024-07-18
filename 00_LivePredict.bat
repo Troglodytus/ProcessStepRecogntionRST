@@ -6,7 +6,7 @@ echo.
 echo ...executing live predict script...
 echo.
 
-set "dir=C:\Users\Eichleitner\Documents\Coding"
+set "dir=C:\Users\LangeMatteoG\Documents\ProcessStepRecogntionRST"
 
 echo.
 echo 07_live_predict_v04.py wird gestartet!

@@ -11,14 +11,14 @@ height = 790
 
 # Define a dictionary to map keypresses to their respective folders
 folders_dict = {
-    '1': "C:/Users/Eichleitner/Documents/Coding/TestValidation/med1/",
-    '2': "C:/Users/Eichleitner/Documents/Coding/TestValidation/med2/",
-    '3': "C:/Users/Eichleitner/Documents/Coding/TestValidation/med3/",
-    '4': "C:/Users/Eichleitner/Documents/Coding/TestValidation/diflush/",
-    '5': "C:/Users/Eichleitner/Documents/Coding/TestValidation/n2dry/",
-    '6': "C:/Users/Eichleitner/Documents/Coding/TestValidation/preflush/",
-    '7': "C:/Users/Eichleitner/Documents/Coding/TestValidation/noprocess/",
-    '8': "C:/Users/Eichleitner/Documents/Coding/TestValidation/mdwait/"
+    '2': "C:/Users/Public/FrameCategorizationAlgorithm/TestValidation/med2/",
+    '3': "C:/Users/Public/FrameCategorizationAlgorithm/TestValidation/med3/",
+    '4': "C:/Users/Public/FrameCategorizationAlgorithm/TestValidation/diflush/",
+    '1': "C:/Users/Public/FrameCategorizationAlgorithm/TestValidation/med1/",
+    '5': "C:/Users/Public/FrameCategorizationAlgorithm/TestValidation/n2dry/",
+    '6': "C:/Users/Public/FrameCategorizationAlgorithm/TestValidation/preflush/",
+    '7': "C:/Users/Public/FrameCategorizationAlgorithm/TestValidation/noprocess/",
+    '8': "C:/Users/Public/FrameCategorizationAlgorithm/TestValidation/mdwait/"
     }
 
 # define a function to capture screenshot

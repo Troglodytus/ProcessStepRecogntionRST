@@ -1,9 +1,10 @@
-#import matplotlib as plt
-#matplotlib.use('Qt5Agg')
+# import matplotlib as plt
+# matplotlib.use('Qt5Agg')
 
 
 import time
 import tensorflow as tf
+print("TensorFlow-Version:", tf.__version__)
 from tensorflow import keras
 from PIL import ImageGrab
 import numpy as np
@@ -15,7 +16,8 @@ plt.ion()
 #model = keras.models.load_model('C:/Users/Eichleitner/Documents/Coding/RST5C_7Class_Model_v05.h5')
 #model = keras.models.load_model('C:/Users/Eichleitner/Documents/Coding/RST_7Class_Aug_Model_v02.h5')
 #model = keras.models.load_model('C:/Users/Eichleitner/Documents/Coding/RST_7Class_Aug_Model_v03.h5')
-model = keras.models.load_model('C:/Users/Eichleitner/Documents/Coding/RST_7Class_256_Aug_Model_v05.h5')
+#model = keras.models.load_model('C:/Users/Public/ProcessStepRecognitionRST/Model/RST_7Class_256_Aug_Model_v05.h5')
+model = keras.models.load_model("RST_7Class_256_Aug_Model_v05.h5")
 #model = keras.models.load_model('C:/Users/Eichleitner/Documents/Coding/RST_13Class_Aug_Model_v01.h5')
 
 # Define image size and class labels

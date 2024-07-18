@@ -1,21 +1,22 @@
 import tensorflow as tf
+import re
+
+model_used = "model_process_step_recognition.keras"
 
 # Define the path to the saved model and the specific checkpoint
-model_path = 'C:/Users/Eichleitner/Documents/Coding/model.h5'
-checkpoint_path = 'C:/Users/Eichleitner/Documents/Coding/training_checkpoints/cp-0007.ckpt'
+model_path = "C:/Users/LangeMatteoG/Documents/ProcessStepRecogntionRST/" + model_used
+checkpoint_path = "C:/Users/LangeMatteoG/Documents/ProcessStepRecogntionRST/training_checkpoints/cp-0001.ckpt.keras"
 
 # Load the entire model, including its architecture and weights
 model = tf.keras.models.load_model(model_path)
 
 # Load the weights from checkpoint 12 into the model
 try:
-    # TensorFlow 2.x expects the checkpoint without the '.index' or '.data-00000-of-00001' extensions
     # Only provide the prefix up to the checkpoint number
     model.load_weights(checkpoint_path)
 
     print(f"Checkpoint '{checkpoint_path}' loaded successfully.")
 
-    # Save the updated model back to 'model.h5'
     model.save(model_path)
     print(f"Model saved back to '{model_path}'.")
 

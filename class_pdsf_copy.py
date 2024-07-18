@@ -7,7 +7,7 @@ def copy_pdsf_files():
     equipment = 'RST5C'
     VIEWERPATH = 'VIEWERPATH'
     file_path = os.path.join(pdsf_path, equipment, VIEWERPATH)
-    destination = 'C:\\Users\\Eichleitner\\Documents\\Coding\\pdsf'
+    destination = "C:\Users\Public\FrameCategorizationAlgorithm\pdsf"
 
     print("source: ", file_path)
 

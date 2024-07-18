@@ -12,10 +12,10 @@ import os
 import shutil
 import json
 
-destination_path = 'C:\\Users\\Eichleitner\\Documents\\Coding\\pdsf'
-model_path = 'C:/Users/Eichleitner/Documents/Coding/RST_7Class_Aug_Model_v03.h5'
-LUT = pd.read_excel('C:\\Users\\Eichleitner\\Documents\\Coding\\RecipeStepLUT.xlsx')
-video_directory = 'C:\\Users\\Eichleitner\\Documents\\Coding\\video'
+destination_path = "C:/Users/Public/FrameCategorizationAlgorithm/pdsf"
+model_path = 'C:/Users/Public/ProcessStepRecognitionRST/Model/RST_7Class_256_Aug_Model_v05.h5'
+LUT = pd.read_excel("C:/Users/Public/FrameCategorizationAlgorithm/RecipeStepLUT.xlsx")
+video_directory = "C:/Users/Public/FrameCategorizationAlgorithm/video"
 video_files = [f for f in os.listdir(video_directory) if f.endswith(".avi") or f.endswith(".mp4")]
 video_handler = VideoHandler(video_directory)
 

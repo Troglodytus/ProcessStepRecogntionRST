@@ -6,7 +6,7 @@ echo.
 echo Commencing AI preprocessing scripts
 echo.
 
-set "dir=C:\Users\Eichleitner\Documents\Coding"
+set "dir=C:\Users\Public\FrameCategorizationAlgorithm"
 
 echo.
 echo 02_resize_images.py wird gestartet!
