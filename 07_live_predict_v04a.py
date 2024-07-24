@@ -10,15 +10,25 @@ from PIL import ImageGrab
 import numpy as np
 import matplotlib.pyplot as plt
 plt.ion()
+import configparser
 
+
+model_used = "model_process_step_recognition.keras"
+config = configparser.ConfigParser()
+config.read('config.ini')
 
 # Load pre-trained model from H5 file
 #model = keras.models.load_model('C:/Users/Eichleitner/Documents/Coding/RST5C_7Class_Model_v05.h5')
 #model = keras.models.load_model('C:/Users/Eichleitner/Documents/Coding/RST_7Class_Aug_Model_v02.h5')
 #model = keras.models.load_model('C:/Users/Eichleitner/Documents/Coding/RST_7Class_Aug_Model_v03.h5')
 #model = keras.models.load_model('C:/Users/Public/ProcessStepRecognitionRST/Model/RST_7Class_256_Aug_Model_v05.h5')
-model = keras.models.load_model("RST_7Class_256_Aug_Model_v05.h5")
+#model = keras.models.load_model("RST_7Class_256_Aug_Model_v05.h5")
 #model = keras.models.load_model('C:/Users/Eichleitner/Documents/Coding/RST_13Class_Aug_Model_v01.h5')
+
+model_path = config['Paths']['model_path']
+model = tf.keras.models.load_model(model_path,
+        compile=compile,
+        safe_mode=True,)
 
 # Define image size and class labels
 IMG_SIZE = 256
