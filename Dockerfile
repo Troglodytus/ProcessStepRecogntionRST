@@ -1,5 +1,7 @@
 FROM python:3.12
 
+ENV PYTHONUNBUFFERED=1
+
 COPY * /opt/microservices/
 COPY requirements.txt /opt/microservices/
 RUN pip install --upgrade pip \
@@ -10,4 +12,9 @@ RUN pip install --upgrade pip \
   && apt install -y libmariadb3 libmariadb-dev \
   && pip install --upgrade -r /opt/microservices/requirements.txt
 
-CMD ["python", "app.py"]
+USER 1001
+
+EXPOSE 8080
+WORKDIR /opt/microservices/
+
+CMD ["python", "app.py", "8080"]
