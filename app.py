@@ -14,12 +14,16 @@ def home():
 
 @app.route("/check_db")
 def check_db():
+    resp1 = Response("ok")
+    resp2 = Response("nicht ok")
+    resp1.headers['Custom-Header'] = 'Awesome'
+    resp2.headers['Custom-Header'] = 'Awesome'
     try:
         # Überprüfe die Verbindung zur Datenbank
         client.admin.command('ping')
-        return "Verbindung besteht!"
+        return resp1
     except Exception as e:
-        return f"Verbindung fehlgeschlagen: {e}"
+        return resp2
 
 @app.route("/healthz")
 def healthz():
