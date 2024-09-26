@@ -1,13 +1,17 @@
+import os
+
 from flask import Flask
 from flask import Response
 from flask import render_template
 from pymongo import MongoClient
 
 app = Flask(__name__)
-# MongoDB-Verbindung herstellen mit Connection String
-client = MongoClient("mongodb://127.0.0.1:27017/")
-db = client.test_database
-db = client.test_database
+mongo_host = os.getenv('MONGO_HOST', 'localhost')
+mongo_port = int(os.getenv('MONGO_PORT', 27017))
+mongo_db = os.getenv('MONGO_DB', 'mydatabase')
+
+client = MongoClient(f'mongodb://{mongo_host}:{mongo_port}/')
+db = client[mongo_db]
 @app.route('/')
 def home():
     return "Hallo, Flask!"
@@ -35,3 +39,4 @@ def healthz():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port='8080')
+    app.run(debug=True)
