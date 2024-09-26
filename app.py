@@ -27,6 +27,7 @@ def check_db():
         client.admin.command('ping')
         return resp1
     except Exception as e:
+
         return resp2
 
 @app.route("/healthz")
